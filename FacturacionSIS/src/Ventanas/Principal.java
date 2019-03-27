@@ -29,40 +29,40 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        password_txt = new javax.swing.JPasswordField();
+        usuario_txt = new java.awt.TextField();
+        ingreso_boton = new javax.swing.JButton();
+        Fondo_file = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("ok");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        password_txt.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
+        password_txt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                password_txtActionPerformed(evt);
             }
         });
+        getContentPane().add(password_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, 280, 30));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(117, 117, 117)
-                .addComponent(jButton1)
-                .addContainerGap(240, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(69, 69, 69)
-                .addComponent(jButton1)
-                .addContainerGap(208, Short.MAX_VALUE))
-        );
+        usuario_txt.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
+        getContentPane().add(usuario_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 280, 30));
+
+        ingreso_boton.setBackground(new java.awt.Color(51, 0, 204));
+        ingreso_boton.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
+        ingreso_boton.setForeground(new java.awt.Color(255, 255, 255));
+        ingreso_boton.setText("INGRESO");
+        getContentPane().add(ingreso_boton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 400, 140, 50));
+
+        Fondo_file.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo1_3.png"))); // NOI18N
+        getContentPane().add(Fondo_file, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        JOptionPane.showMessageDialog(null,"LISTO CHULA ..:");
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void password_txtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_password_txtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_password_txtActionPerformed
 
     /**
      * @param args the command line arguments
@@ -100,6 +100,9 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel Fondo_file;
+    private javax.swing.JButton ingreso_boton;
+    private javax.swing.JPasswordField password_txt;
+    private java.awt.TextField usuario_txt;
     // End of variables declaration//GEN-END:variables
 }
