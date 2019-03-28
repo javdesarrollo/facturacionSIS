@@ -24,9 +24,9 @@ public class Login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         txtUser = new javax.swing.JTextField();
         txtPass = new javax.swing.JPasswordField();
-        jButton2 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        btnLogin = new javax.swing.JButton();
+        Logo = new javax.swing.JLabel();
+        Fondo = new javax.swing.JLabel();
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/elegante-formulario-iniciar-sesion_23-2147721241.jpg"))); // NOI18N
 
@@ -57,22 +57,22 @@ public class Login extends javax.swing.JFrame {
         });
         getContentPane().add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 340, 260, 50));
 
-        jButton2.setBackground(new java.awt.Color(102, 102, 102));
-        jButton2.setFont(new java.awt.Font("Arial Black", 1, 20)); // NOI18N
-        jButton2.setText("LOGIN");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnLogin.setBackground(new java.awt.Color(102, 102, 102));
+        btnLogin.setFont(new java.awt.Font("Arial Black", 1, 20)); // NOI18N
+        btnLogin.setText("LOGIN");
+        btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnLoginActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 470, 180, 60));
+        getContentPane().add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 470, 180, 60));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/jav fac.png"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, 200, 190));
+        Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/jav fac.png"))); // NOI18N
+        getContentPane().add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 200, 190));
 
-        jLabel2.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/elegante-formulario-iniciar-sesion_23-2147721241.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, -1));
+        Fondo.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
+        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/elegante-formulario-iniciar-sesion_23-2147721241.jpg"))); // NOI18N
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -85,13 +85,13 @@ public class Login extends javax.swing.JFrame {
         txtPass.setText("");
     }//GEN-LAST:event_txtPassMouseClicked
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         
         Principal principal=new Principal();
         principal.setExtendedState(MAXIMIZED_BOTH);
        principal.setVisible(true);
        dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnLoginActionPerformed
 
     public static void main(String args[]) throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException {
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -100,10 +100,10 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel Fondo;
+    private javax.swing.JLabel Logo;
+    private javax.swing.JButton btnLogin;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JPasswordField txtPass;
     private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables

@@ -41,9 +41,7 @@ public class FacSis extends javax.swing.JInternalFrame {
         jTextField4 = new javax.swing.JTextField();
 
         setBorder(null);
-        setClosable(true);
-        setIconifiable(true);
-        setMaximizable(true);
+        setForeground(java.awt.Color.lightGray);
         setVisible(true);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Datos", 0, 0, new java.awt.Font("Calibri Light", 1, 12))); // NOI18N
