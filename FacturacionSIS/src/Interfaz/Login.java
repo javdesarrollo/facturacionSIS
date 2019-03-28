@@ -96,7 +96,7 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(btn_amari_activo, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 0, -1, -1));
 
         Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/jav fac.png"))); // NOI18N
-        getContentPane().add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 200, 190));
+        getContentPane().add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, 200, 190));
 
         Fondo.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/elegante-formulario-iniciar-sesion_23-2147721241.jpg"))); // NOI18N
