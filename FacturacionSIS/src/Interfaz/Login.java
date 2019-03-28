@@ -13,6 +13,7 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         super.setTitle("Acceso Sistema");
+         setLocationRelativeTo(null);
        
     }
 
@@ -24,7 +25,7 @@ public class Login extends javax.swing.JFrame {
         txtUser = new javax.swing.JTextField();
         txtPass = new javax.swing.JPasswordField();
         jButton2 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/elegante-formulario-iniciar-sesion_23-2147721241.jpg"))); // NOI18N
@@ -66,12 +67,12 @@ public class Login extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 470, 180, 60));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/fabe2da4-d410-457b-8819-af17d3725f81.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, 210, 200));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/jav fac.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, 200, 190));
 
         jLabel2.setFont(new java.awt.Font("Calibri Light", 0, 20)); // NOI18N
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/elegante-formulario-iniciar-sesion_23-2147721241.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -86,8 +87,8 @@ public class Login extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         
-        FacSis principal=new FacSis();
-        
+        Principal principal=new Principal();
+        principal.setExtendedState(MAXIMIZED_BOTH);
        principal.setVisible(true);
        dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -102,7 +103,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPasswordField txtPass;
     private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
