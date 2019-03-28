@@ -14,6 +14,7 @@ public class Login extends javax.swing.JFrame {
         initComponents();
         super.setTitle("Acceso Sistema");
          setLocationRelativeTo(null);
+         btn_amari_activo.setVisible(false);
        
     }
 
@@ -25,12 +26,19 @@ public class Login extends javax.swing.JFrame {
         txtUser = new javax.swing.JTextField();
         txtPass = new javax.swing.JPasswordField();
         btnLogin = new javax.swing.JButton();
+        btn_rojo = new javax.swing.JLabel();
+        btn_rojo_activo = new javax.swing.JLabel();
+        btn_verde = new javax.swing.JLabel();
+        btn_verde_activo = new javax.swing.JLabel();
+        btn_amari = new javax.swing.JLabel();
+        btn_amari_activo = new javax.swing.JLabel();
         Logo = new javax.swing.JLabel();
         Fondo = new javax.swing.JLabel();
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/elegante-formulario-iniciar-sesion_23-2147721241.jpg"))); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtUser.setFont(new java.awt.Font("Calibri Light", 1, 20)); // NOI18N
@@ -66,6 +74,26 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 470, 180, 60));
+
+        btn_rojo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/btn_ext.png"))); // NOI18N
+        getContentPane().add(btn_rojo, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 10, -1, -1));
+
+        btn_rojo_activo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/btn_ext_activo.png"))); // NOI18N
+        btn_rojo_activo.setEnabled(false);
+        getContentPane().add(btn_rojo_activo, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 0, -1, -1));
+
+        btn_verde.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/btn_max.png"))); // NOI18N
+        getContentPane().add(btn_verde, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 10, -1, -1));
+
+        btn_verde_activo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/btn_max.png"))); // NOI18N
+        getContentPane().add(btn_verde_activo, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 10, -1, -1));
+
+        btn_amari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/btn_mini.png"))); // NOI18N
+        getContentPane().add(btn_amari, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 10, -1, -1));
+
+        btn_amari_activo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/btn_mini_activo.png"))); // NOI18N
+        btn_amari_activo.setEnabled(false);
+        getContentPane().add(btn_amari_activo, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 0, -1, -1));
 
         Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/jav fac.png"))); // NOI18N
         getContentPane().add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 200, 190));
@@ -103,6 +131,12 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel Fondo;
     private javax.swing.JLabel Logo;
     private javax.swing.JButton btnLogin;
+    private javax.swing.JLabel btn_amari;
+    private javax.swing.JLabel btn_amari_activo;
+    private javax.swing.JLabel btn_rojo;
+    private javax.swing.JLabel btn_rojo_activo;
+    private javax.swing.JLabel btn_verde;
+    private javax.swing.JLabel btn_verde_activo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPasswordField txtPass;
     private javax.swing.JTextField txtUser;
