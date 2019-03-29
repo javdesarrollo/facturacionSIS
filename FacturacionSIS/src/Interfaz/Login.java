@@ -1,5 +1,8 @@
 package Interfaz;
 
+import java.text.ParseException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -132,7 +135,12 @@ public class Login extends javax.swing.JFrame {
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         
-        Principal principal=new Principal();
+        Principal principal = null;
+       
+            principal = new Principal();
+        
+            
+        
         principal.setExtendedState(MAXIMIZED_BOTH);
        principal.setVisible(true);
        dispose();
