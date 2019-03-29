@@ -88,7 +88,7 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(btn_rojo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40, 40));
 
         Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/jav fac.png"))); // NOI18N
-        getContentPane().add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, 200, 190));
+        getContentPane().add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, 200, 190));
 
         btn_verde.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Multimedia/verde.png"))); // NOI18N
         btn_verde.addMouseListener(new java.awt.event.MouseAdapter() {
